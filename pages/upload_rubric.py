@@ -12,6 +12,9 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+from utils import show_navigation
+show_navigation()
+
 from typing import Any
 
 import numpy as np
@@ -70,7 +73,7 @@ def animation_demo() -> None:
     st.button("Re-run")
 
 
-st.set_page_config(page_title="Animation Demo", page_icon="📹")
+#st.set_page_config(page_title="Animation Demo", page_icon="📹")
 st.markdown("# Animation Demo")
 st.sidebar.header("Animation Demo")
 st.write(

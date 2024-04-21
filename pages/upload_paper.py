@@ -12,6 +12,9 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+from utils import show_navigation
+show_navigation()
+
 import time
 
 import numpy as np
@@ -42,7 +45,7 @@ def plotting_demo():
     st.button("Re-run")
 
 
-st.set_page_config(page_title="Plotting Demo", page_icon="📈")
+#st.set_page_config(page_title="Plotting Demo", page_icon="📈")
 st.markdown("# Plotting Demo")
 st.sidebar.header("Plotting Demo")
 st.write(

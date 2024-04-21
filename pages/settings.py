@@ -12,6 +12,9 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+from utils import show_navigation
+show_navigation()
+
 from urllib.error import URLError
 
 import pandas as pd
@@ -103,7 +106,7 @@ def mapping_demo():
         )
 
 
-st.set_page_config(page_title="Mapping Demo", page_icon="🌍")
+#st.set_page_config(page_title="Mapping Demo", page_icon="🌍")
 st.markdown("# Mapping Demo")
 st.sidebar.header("Mapping Demo")
 st.write(

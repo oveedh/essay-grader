@@ -17,6 +17,7 @@ from streamlit.logger import get_logger
 
 LOGGER = get_logger(__name__)
 
+from utils import show_navigation
 
 def run():
     st.set_page_config(
@@ -24,9 +25,11 @@ def run():
         page_icon="👋",
     )
 
+    show_navigation()
+
     st.write("# Welcome to Streamlit! 👋")
 
-    st.sidebar.success("Select a demo above.")
+   #st.sidebar.success("Select a demo above.")
 
     st.markdown(
         """

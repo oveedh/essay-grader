@@ -12,6 +12,9 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+from utils import show_navigation
+show_navigation()
+
 from urllib.error import URLError
 
 import altair as alt
@@ -64,7 +67,7 @@ def data_frame_demo():
         )
 
 
-st.set_page_config(page_title="DataFrame Demo", page_icon="📊")
+#st.set_page_config(page_title="DataFrame Demo", page_icon="📊")
 st.markdown("# DataFrame Demo")
 st.sidebar.header("DataFrame Demo")
 st.write(
