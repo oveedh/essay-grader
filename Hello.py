@@ -14,6 +14,7 @@
 
 import streamlit as st
 from streamlit.logger import get_logger
+import signon
 
 LOGGER = get_logger(__name__)
 
@@ -28,6 +29,8 @@ def run():
     show_navigation()
 
     st.write("# Welcome to Streamlit! 👋")
+
+    signon.main()
 
    #st.sidebar.success("Select a demo above.")
 
